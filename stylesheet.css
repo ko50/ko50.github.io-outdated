@@ -1,7 +1,18 @@
 
 * {
     margin: 0px;
+}
+
+body {
     background-color: rgb(253, 241, 255);
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    color: white;
+    align-items: center;
 }
 
 .header {
@@ -12,24 +23,10 @@
 }
 
 .name {
-    margin-top: auto;
-    margin-left: auto;
+    margin-top: 30px;
+    margin-left: 50px;
     padding-top: 30px;
     padding-left: 50px;
-}
-
-.general_text {
-    color: white;
-    font-style: bold;
-    font-size: 15px;
-    font-family: sans-serif;
-}
-
-.power_text {
-    color: white;
-    font-style: italic;
-    font-size: 15px;
-    font-family: serif;
 }
 
 .cotton {
@@ -38,7 +35,7 @@
 
 .top {
     height: 800px;
-    background-color: rgb(248, 242, 234);
+    background-color: rgb(255, 243, 227);
 }
 
 .container {
