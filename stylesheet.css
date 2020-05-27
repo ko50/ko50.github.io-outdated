@@ -22,6 +22,13 @@ body {
     position: fixed;
 }
 
+.ko {
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
 .name {
     margin-top: 30px;
     margin-left: 50px;
@@ -35,6 +42,7 @@ body {
 
 .top {
     height: 800px;
+    margin: 0auto;
     background-color: rgb(255, 243, 227);
 }
 
