@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(253, 241, 255);
+    background-color: rgb(255, 206, 251);
     font-family: "Helvetica Neue",
     Arial,"Hiragino Kaku Gothic ProN",
     "Hiragino Sans",Meiryo,sans-serif;
@@ -13,28 +13,15 @@ body {
 }
 
 .header {
-    background-color: rgb(158, 45, 139);
+    background-color: rgb(88, 22, 77);
     width: 100%;
     height: 70px;
     position: fixed;
 }
 
 .ko {
-    padding-left: 50px;
-    margin: 50px;
-}
-
-.ko > a {
-    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial',
-    'Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic',
-    'メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-}
-
-.name {
-    margin-top: 30px;
-    margin-left: 50px;
-    padding-top: 30px;
-    padding-left: 50px;
+    padding-left: 30px;
+    margin: 20px;
 }
 
 .cotton {
@@ -43,8 +30,10 @@ body {
 
 .top {
     height: 800px;
-    margin: 0auto;
-    background-color: rgb(255, 243, 227);
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: rgb(255, 108, 248);
 }
 
 .container {
