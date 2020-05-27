@@ -49,7 +49,9 @@ body {
 .top {
     height: 800px;
     padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(255, 164, 250);
 }
