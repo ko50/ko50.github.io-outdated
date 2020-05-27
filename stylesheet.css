@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    background-color: rgb(253, 241, 255);
+}
+
 .header {
     background-color: rgb(158, 45, 139);
     width: 100%;
@@ -6,6 +11,8 @@
 }
 
 .name {
+    margin-top: auto;
+    margin-left: auto;
     padding-top: 30px;
     padding-left: 50px;
 }
@@ -24,11 +31,19 @@
     font-family: serif;
 }
 
-body {
-    background-color: rgb(253, 241, 255);
+.cotton {
+    width: 400px;
+}
+
+.top {
+    height: 800px;
+    background-color: rgb(248, 242, 234);
 }
 
 .container {
-    background-color: rgb(236, 224, 208);
-    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
