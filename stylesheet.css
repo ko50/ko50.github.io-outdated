@@ -23,10 +23,8 @@ body {
 }
 
 .ko {
-    margin-left: 100px;
-    margin-top: 50px;
-    padding-left: 100px;
-    padding-top: 50px;
+    padding-left: 50px;
+    margin: 50px;
 }
 
 .name {
