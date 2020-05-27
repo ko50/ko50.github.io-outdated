@@ -32,18 +32,18 @@ body {
     width: 400px;
 }
 
-.top {
-    height: 800px;
-    padding-top: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
-    background-color: rgb(255, 108, 248);
-}
-
 .container {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.top {
+    height: 800px;
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: rgb(255, 164, 250);
 }
