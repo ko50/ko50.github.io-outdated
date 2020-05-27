@@ -24,15 +24,19 @@ body {
     margin: 20px;
 }
 
+.ko_f {
+    font-weight: bold;
+}
+
 .cotton {
     width: 400px;
 }
 
 .top {
     height: 800px;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-right: 400px;
     background-color: rgb(255, 108, 248);
 }
 
