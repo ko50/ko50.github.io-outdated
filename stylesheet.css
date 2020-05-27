@@ -1,22 +1,29 @@
-#top {
+.header {
     background-color: rgb(107, 28, 94);
     width: 100%;
     height: 100%;
     max-height: 50px;
-    border: rgb(0, 53, 0);
     border-radius: 8px;
     position: fixed;
 }
 
+.name {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
 .general_text {
     color: white;
-    font: bold;
+    font-style: bold;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-.italic {
-    font: italic;
+.power_text {
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+    font-family: serif;
 }
 
 body {
