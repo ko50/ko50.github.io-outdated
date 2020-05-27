@@ -32,6 +32,10 @@ body {
     width: 250px;
 }
 
+.helloworld {
+    width: 270px;
+}
+
 .container {
     width: 100%;
     padding-left: 15px;
