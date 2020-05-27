@@ -1,9 +1,10 @@
 header {
     background-color: rgb(175, 255, 255);
-    height: 50;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
     border: rgb(2, 255, 242);
     border-radius: 8px;
-    
 }
 
 .nav_toggle {
@@ -19,8 +20,9 @@ header {
     display: block;
     width: 100%;
     height: 2px;
-    right: 5px;
-    background-color: rgb(238, 230, 230);
+    top: 12px;
+    right: 12px;
+    background-color: rgb(86, 97, 255);
     position: absolute;
     transition: transform .5s, opacity .5s;
 }
@@ -52,7 +54,6 @@ header {
 }
 
 .nav {
-    float: right;
     position: fixed;
     top: 3rem;
     left: 0;
@@ -65,14 +66,25 @@ header {
 }
 
 .nav.open {
-    opacity: 1;
+    background-color: grey;
+    opacity: 3;
     visibility: visible;
 }
 
-body {
-    background-color: rgb(196, 227, 255);
+.nav_menu_ul {
+    float: right;
 }
 
+.nav_menu_li {
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(86, 97, 255);
+}
+
+body {
+    background-color: rgb(231, 243, 255);
+}
 
 .helloworld {
     font: bold, italic;
