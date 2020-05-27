@@ -1,15 +1,13 @@
 .header {
-    background-color: rgb(107, 28, 94);
+    background-color: rgb(158, 45, 139);
     width: 100%;
-    height: 100%;
-    max-height: 50px;
-    border-radius: 8px;
+    height: 70px;
     position: fixed;
 }
 
 .name {
-    padding-top: 10px;
-    padding-left: 40px;
+    padding-top: 30px;
+    padding-left: 50px;
 }
 
 .general_text {
@@ -27,9 +25,10 @@
 }
 
 body {
-    background-color: rgb(250, 215, 255);
+    background-color: rgb(253, 241, 255);
 }
 
 .container {
+    background-color: rgb(236, 224, 208);
     align-items: center;
 }
