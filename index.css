@@ -28,7 +28,6 @@ body {
 
 .about-me {
     height: 200px;
-    margin-top: 70px;
     padding: 10px;
 }
 
@@ -59,10 +58,6 @@ h1 {
     margin: 20px;
 }
 
-.ko_f {
-    font-weight: bold;
-}
-
 .cotton_field {
     -webkit-justify-content: center;
     justify-content: center;
@@ -71,6 +66,7 @@ h1 {
 }
 
 .main  {
+    margin-top: 70px;
     width: 100%;
     height: 700px;
     -webkit-justify-content: center;
