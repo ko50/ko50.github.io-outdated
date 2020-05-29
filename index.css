@@ -28,6 +28,8 @@ body {
 
 .about-me {
     height: 200px;
+    margin-top: 70px;
+    padding: 10px;
 }
 
 .skills {
