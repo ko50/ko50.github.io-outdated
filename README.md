@@ -1,6 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Hello, someone who came to see my portfolio!**
+
+*This portfolio-site is just **in development**. So, you must wait for publishing this*.
+*I'm too much sorry because I can't show you anything even you came...*
+
+**Oh, please stop to browser back!**
+**Instead of my portfolio, please see this "*so cute youjo*"!!!!!!!!!!**
+<br />
+
+### **VERY NICE...**
+![](https://cdn.discordapp.com/attachments/700920014475362346/734486798927134870/life.png)
+
+---
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
