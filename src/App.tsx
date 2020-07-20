@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Header } from './comps/header/Header';
 import { Cover } from './comps/cover/Cover';
+import { AboutMe } from './comps/aboutme/AboutMe';
 
 const Root = styled.div`
   text-align: center;
@@ -17,6 +18,7 @@ function App() {
     <Root>
       <Header />
       <Cover />
+      <AboutMe />
     </Root>
   );
 }

@@ -1,10 +1,11 @@
 ## **Hello, someone who came to see my portfolio!**
 
-*This portfolio-site is just **in development**. So, you must wait for publishing this*. <br />
-*I'm too much sorry because I can't show you anything you came...*
+*This portfolio-site is just **†in development†**. So, you must wait for publishing this*. <br />
+*I'm too much sorry because I can't show you anything...* <br />
+*Sorry...sorry for being alive...sorry...I'm sorry...*
 
 **Oh, please stop to browser back!** <br />
-**Instead of my portfolio, please see this *so cute youjo*!!!!!**
+**Instead of my portfolio, please see this picture of so cute *loli*!!!!!**
 
 ![](https://cdn.discordapp.com/attachments/700920014475362346/734486798927134870/life.png)
 

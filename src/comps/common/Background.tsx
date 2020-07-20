@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BaseColors } from '../../data/Color';
+import { BaseColors } from 'data/Color';
 
 export const Background = styled.div`
   background: linear-gradient(white, ${BaseColors.whitishpink});
