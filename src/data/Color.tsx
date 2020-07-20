@@ -1,8 +1,9 @@
 export const BaseColors = {
-    background: "#FFF3FF",
-    header: "#280E3B",
-    link: "#802182",
-    text: "#D3B7D8",
-    accent: "#632A7E",
-    perple: "#A13E97",
+    whitishpink: "#fcf7ff",
+    darkestpurple: "#1b0424",
+    darkperple: "#280E3B",
+    purple: "#531a70",
+    whitishpurple: "#dbbae0",
+    lighterpurple: "#ac52c7",
+    redishpurple: "#bd3a9a",
 };
