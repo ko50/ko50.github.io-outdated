@@ -6,4 +6,6 @@ export const BaseColors = {
     whitishpurple: "#dbbae0",
     lighterpurple: "#ac52c7",
     redishpurple: "#bd3a9a",
+    grey: "#575757",
+    black: "#171717",
 };

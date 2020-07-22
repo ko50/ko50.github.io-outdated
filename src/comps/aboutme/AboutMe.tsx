@@ -22,7 +22,7 @@ const InfoList = styled.ul`
 
 const Title = styled.span`
   font-weight: bold;
-  forn-size: 1em;
+  font-size: 1.2em;
   margin-top: 2em;
 `;
 
@@ -44,13 +44,13 @@ export function AboutMe(): JSX.Element {
         <br />
         <Title>専攻</Title><br />情報系/グローバル系 専攻 <br />
         <br />
-        <Title>名前</Title><br />koと申します。本名由来ですがとても呼びにくいので呼称としてふさわしくない。 <br />
+        <Title>名前</Title><br />koと申します。とても呼びにくいので呼称としてふさわしくない。由来は本名です。 <br />
         <br />
-        <Title>出生</Title><br />西暦2004に生まれ、現在16歳の人間として生活しています。 <br />
+        <Title>出生</Title><br />西暦2004に生まれ、現在16歳の男性として生活しています。 <br />
         <br />
       </InfoList>
       <Introduce>
-        何もかも出遅れた系高専生です。その辺で頭を抱えて過去を呪っています。 <br />
+        何もかも出遅れた系高専生です。一日に一回は頭を抱えて過去を呪っています。 <br />
         春からプログラミングを始め、今は課題と戦いを繰り広げる日々を送っています。
       </Introduce>
     </Root>

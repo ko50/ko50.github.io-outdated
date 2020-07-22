@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Header } from './comps/header/Header';
 import { Cover } from './comps/cover/Cover';
 import { AboutMe } from './comps/aboutme/AboutMe';
+import { Skills } from './comps/skills/Skills';
 
 const Root = styled.div`
   text-align: center;
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Cover />
       <AboutMe />
+      <Skills />
     </Root>
   );
 }
