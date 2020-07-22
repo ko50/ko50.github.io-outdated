@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BaseColors } from 'data/Color';
-import { SkillData, masteryLevelMap } from 'data/type/SkillData';
+import { SkillData } from 'data/type/SkillData';
 
 const Root = styled.div`
   height: 15em;
@@ -58,7 +58,6 @@ const Description = styled.p`
 `;
 
 export function SkillCard(props: SkillData): JSX.Element {
-  const mastery: string = masteryLevelMap[props.masterLevel];
   const logoSrc: string = props.name + ".svg";
 
   return (
@@ -71,7 +70,7 @@ export function SkillCard(props: SkillData): JSX.Element {
         ))}
       </FrameWorkList>
       <Mastery>
-        {mastery}
+        {props.mastery}
       </Mastery>
       <Description>
         {props.description}
