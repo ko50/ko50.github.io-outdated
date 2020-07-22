@@ -7,7 +7,7 @@ const WelcomeText = styled.p`
   font-weight: bold;
   text-align: center;
   padding-bottom: 0.2em;
-  color: ${BaseColors.darkestpurple};
+  color: ${BaseColors.purpleblack};
 `;
 
 export function HelloWorld() {

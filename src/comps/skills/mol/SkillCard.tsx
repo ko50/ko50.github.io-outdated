@@ -36,7 +36,7 @@ const FrameworkCard = styled.div`
   display: inline-block;
   color: white;
   font-size: 0.5em;
-  background: linear-gradient(-45deg, ${BaseColors.darkperple} 0%,  ${BaseColors.purple} 100%);
+  background: linear-gradient(-45deg, ${BaseColors.darkpurple} 0%,  ${BaseColors.purple} 100%);
   border: 1px solid black;
   box-shadow: 0 1.5px 2px 0 rgba(0, 0, 0, .5);
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, .5);
@@ -55,6 +55,7 @@ const Description = styled.p`
   width: 15em;
   text-align: left;
   display: inline-block;
+  color: ${BaseColors.purpleblack};
 `;
 
 export function SkillCard(props: SkillData): JSX.Element {
