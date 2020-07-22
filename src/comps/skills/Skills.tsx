@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BaseColors } from 'data/Color';
 import { TopicTitle, StrongText } from '../common/Formatter';
 import { SkillData } from 'data/type/SkillData';
-import { SkillCard } from './mol/SkillCard';
+import { SkillInfo } from './mol/SkillInfo';
 import { SkillValues } from 'data/value/SkillValues';
 
 const Root = styled.div`
@@ -21,7 +20,7 @@ export function Skills() {
       <StrongText>扱える/触った言語</StrongText>
       <SkillsList>
         {SkillValues.map((skill: SkillData) => (
-          <SkillCard
+          <SkillInfo
             name={skill.name}
             mastery={skill.mastery}
             description={skill.description}
