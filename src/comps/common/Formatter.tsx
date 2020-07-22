@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { BaseColors } from 'data/Color';
 
@@ -16,4 +15,10 @@ export const StrongText = styled.p`
   font-size: 1em;
   font-weight: bold;
   color: ${BaseColors.purpleblack};
+`;
+
+export const GeneralText = styled.p`
+  font-size: 1em;
+  color: ${BaseColors.purpleblack};
+  text-align: start;
 `;
