@@ -4,7 +4,7 @@ export const ProductValues: ProductionData[] = [
     {
         name: "Portfolio",
         url: "https://github.com/ko50/ko50.github.io",
-        description: "成果物のサンプル",
+        description: "Here is product sample.",
         langName: "Typescript/React"
     },
 ];

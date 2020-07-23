@@ -5,6 +5,7 @@ import { Cover } from './comps/cover/Cover';
 import { AboutMe } from './comps/aboutme/AboutMe';
 import { Skills } from './comps/skills/Skills';
 import { Products } from './comps/products/Products';
+import { Contact } from './comps/contact/Contact';
 
 const Root = styled.div`
   text-align: center;
@@ -23,6 +24,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Products />
+      <Contact />
     </Root>
   );
 }

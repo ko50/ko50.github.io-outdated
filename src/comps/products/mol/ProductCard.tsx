@@ -35,7 +35,7 @@ const Eyecatch = styled.img`
   margin-top: 0px;
   min-height: 6em;
   width: 100%;
-  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 5);
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, .5);
 `;
 
 const Title = styled.p`

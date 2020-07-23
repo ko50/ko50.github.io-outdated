@@ -15,6 +15,6 @@ export const AboutMeValues: AboutMeData[] = [
     },
     {
         title: "出生",
-        content: "西暦2004に生まれ、現在16歳の男性として生活しています。",
+        content: "西暦2004生まれ、現在16歳 男性",
     },
 ];
