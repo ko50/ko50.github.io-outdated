@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BaseColors } from 'data/Color';
 import { ContactInfoData } from 'data/type/ContactData';
 import { StrongText } from '../../common/Formatter';
 import { ContactButton } from '../atom/ContactButton';

@@ -1,5 +1,5 @@
 export const BaseColors = {
-    whitishpink: "#fcf7ff",
+    whitishpink: "#fdfaff",
     purpleblack: "#1b0424",
     darkpurple: "#280E3B",
     purple: "#531a70",
