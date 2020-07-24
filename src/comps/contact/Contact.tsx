@@ -12,14 +12,6 @@ const Root = styled.div`
 
 const ContactInfoList = styled.div`
   margin: 0.5em 2em;
-  border: 2px solid ${BaseColors.purpleblack};
-  border-radius: 5px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
-
-  @media screen and (max-width: 50em) {
-    border: none;
-    box-shadow: none;
-  }
 `;
 
 export function Contact(): JSX.Element {
