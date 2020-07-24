@@ -21,6 +21,12 @@ const Root = styled.div`
     background-color: ${BaseColors.purpleblack};
     color: white;
   }
+
+  @media screen and (max-width: 50em) {
+    width: 16em;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `;
 
 const Link = styled.a`
@@ -44,11 +50,19 @@ const Title = styled.p`
   text-align: start;
   margin: 2px 1em;
   bottom-border: 2px solid ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    font-size: 1.2em;
+  }
 `;
 
 const Description = styled(GeneralText)`
   margin: 0.5em 1em;
   color: unset;
+
+  @media screen and (max-width: 50em) {
+    font-size: 0.7em;
+  }
 `;
 
 const Lang = styled.div`
@@ -61,6 +75,12 @@ const Lang = styled.div`
   font-size: 0.5em;
   color: white;
   text-align: start;
+
+  @media screen and (max-width: 50em) {
+    padding: 1px 3px;
+    font-size: 0.4em;
+    margin-bottom: 1em;
+  }
 `;
 
 export function ProductCard(props: ProductionData): JSX.Element {

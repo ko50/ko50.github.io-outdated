@@ -9,7 +9,6 @@ const Root = styled.div`
   margin: 0.5em 1em 0.5em 1em;
   display: inline-block;
   align-items: center;
-
 `;
 
 const Link = styled.a`
@@ -33,6 +32,12 @@ const LogoWrapper = styled.div<{ imageColor: string }>`
 
   :hover {
     color: ${(props) => props.imageColor};
+  }
+
+  @media screen and (max-width: 50em) {
+    color: ${(props) => props.imageColor};
+    transition: none;
+    :hover { none }
   }
 `;
 

@@ -6,6 +6,10 @@ import { ContactButton } from '../atom/ContactButton';
 
 const Root = styled.div`
   display: inline-block;
+
+  @media screen and (max-width: 50em) {
+    margin: 0px 10.5m;
+  }
 `;
 
 const ServiceName = styled(StrongText)`
