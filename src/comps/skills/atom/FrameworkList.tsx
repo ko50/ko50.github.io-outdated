@@ -19,6 +19,10 @@ const FrameworkCard = styled.div`
   margin: 1px 2.5px;
   padding: 2.5px 5px;
   font-weight: bold;
+
+  @media screen and (max-width: 50em) {
+    border-radius: 0.6em;
+  }
 `;
 
 type FrameworksProps = {

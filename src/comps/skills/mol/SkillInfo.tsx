@@ -8,6 +8,7 @@ const Root = styled.div`
   height: 15em;
   width: 20em;
   margin: 2em;
+  margin-bottom: 0.5em;
   background-color: white;
   align-items: center;
   text-align: center;
@@ -34,10 +35,17 @@ const Mastery = styled.p`
 `;
 
 const Description = styled.p`
-  width: 15em;
-  text-align: left;
+  width: 100%;
+  word-break: keep-all;
+  text-align: center;
   display: inline-block;
+  margin-left: 0.5em;
   color: ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    margin-top: 0px;
+    font-size: 0.8em;
+  }
 `;
 
 export function SkillInfo(props: SkillData): JSX.Element {

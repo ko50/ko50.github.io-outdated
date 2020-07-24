@@ -16,7 +16,7 @@ const SkillsList = styled.div`
 export function Skills() {
   return (
     <Root>
-      <TopicTitle>Skills</TopicTitle>
+      <TopicTitle>Language Skills</TopicTitle>
       <StrongText>触った/扱える言語</StrongText>
       <SkillsList>
         {SkillValues.map((skill: SkillData) => (
