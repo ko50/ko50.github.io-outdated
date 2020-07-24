@@ -8,6 +8,11 @@ const WelcomeText = styled.p`
   text-align: center;
   padding-bottom: 0.2em;
   color: ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    font-size: 1.4em;
+    margin: 0.5em;
+  }
 `;
 
 export function HelloWorld() {

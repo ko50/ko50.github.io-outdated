@@ -12,4 +12,8 @@ export const Background = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, .5);
+
+  @media screen and (max-width: 50em) {
+    min-height: 40vh;
+  }
 `;
