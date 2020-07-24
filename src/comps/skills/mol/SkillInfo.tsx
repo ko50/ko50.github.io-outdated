@@ -41,7 +41,7 @@ const Description = styled.p`
 `;
 
 export function SkillInfo(props: SkillData): JSX.Element {
-  const logoSrc: string = props.name + ".svg";
+  const logoSrc: string = 'langIcon/' + props.name + ".svg";
 
   return (
     <Root>

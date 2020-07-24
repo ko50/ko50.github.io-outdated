@@ -64,7 +64,7 @@ const Lang = styled.div`
 `;
 
 export function ProductCard(props: ProductionData): JSX.Element {
-  const screenshotSrc: string = props.name + '.png';
+  const screenshotSrc: string = 'products/' + props.name + '.png';
 
   return (
     <Root>
