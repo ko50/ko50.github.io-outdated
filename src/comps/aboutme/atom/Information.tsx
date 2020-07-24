@@ -6,6 +6,11 @@ import { AboutMeData } from 'data/type/AboutMeData';
 const Root = styled.div`
   margin: 1em 2em;
   align-items: start;
+
+  @media screen and (max-width: 50em) {
+    border-bottom: 1px solid ${BaseColors.purpleblack};
+    padding: 0.5em;
+  }
 `;
 
 const Title = styled.p`
@@ -14,6 +19,10 @@ const Title = styled.p`
   text-align: start;
   margin-bottom: 2px;
   color: ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    text-align: center;
+  }
 `;
 
 const Content = styled.p`
@@ -21,6 +30,11 @@ const Content = styled.p`
   text-align: start;
   margin: 2px;
   color: ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    text-align: center;
+    font-size: 0.8em;
+  }
 `;
 
 export function Information(props: AboutMeData) {

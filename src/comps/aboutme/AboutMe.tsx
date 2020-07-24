@@ -15,6 +15,11 @@ const Root = styled.div`
 const Introduce = styled(StrongText)`
   display: inline-block;
   text-align: start;
+
+  @media screen and (max-width: 50em) {
+    margin: 1em 2em;
+    text-align: center;
+  }
 `;
 
 export function AboutMe(): JSX.Element {
@@ -31,7 +36,6 @@ export function AboutMe(): JSX.Element {
       </InfoList>
       <Introduce>
         何もかも出遅れた系高専生です。一日に一回は頭を抱えて過去を呪っています。 <br />
-        春からプログラミングを始め、今は課題との戦いを生業にして生活を営んでいます。
       </Introduce>
     </Root>
   );

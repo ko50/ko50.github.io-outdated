@@ -3,7 +3,7 @@ import { AboutMeData } from 'data/type/AboutMeData';
 export const AboutMeValues: AboutMeData[] = [
     {
         title: "所属",
-        content: "茨城工業高等専門学校 国際創造工学科 本科二年次",
+        content: "茨城工業高等専門学校 国際創造工学科 二年",
     },
     {
         title: "専攻",

@@ -9,6 +9,10 @@ export const TopicTitle = styled.p`
   display: inline-block;
   font-size: 3em;
   border-bottom: 2px solid ${BaseColors.purpleblack};
+
+  @media screen and (max-width: 50em) {
+    font-size: 2.5em;
+  }
 `;
 
 export const StrongText = styled.p`
