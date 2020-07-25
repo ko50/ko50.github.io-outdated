@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { BaseColors } from 'data/Color';
 
-const WelcomeText = styled.p`
+export const WelcomeText = styled.p`
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
   padding-bottom: 0.2em;
+  margin-right: auto;
+  margin-left: auto;
   color: ${BaseColors.purpleblack};
 
   @media screen and (max-width: 50em) {
@@ -15,6 +17,10 @@ const WelcomeText = styled.p`
   }
 `;
 
-export function HelloWorld() {
-  return <WelcomeText>Hello World, My name is ko!</WelcomeText>;
+export function Welcome() {
+  return (
+    <div>
+      <WelcomeText>Hello World, My name is ko!</WelcomeText>
+    </div>
+  );
 }

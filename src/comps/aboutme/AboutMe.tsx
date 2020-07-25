@@ -9,16 +9,19 @@ import { InfoList } from './mol/InfoList';
 const Root = styled.div`
   align-items: center;
   margin-top: 1em;
-  color: ${BaseColors.purpleblack}
+  color: ${BaseColors.purpleblack};
 `;
 
 const Introduce = styled(StrongText)`
   display: inline-block;
   text-align: start;
+  font-size: 0.9em;
 
   @media screen and (max-width: 50em) {
     margin: 1em 2em;
     text-align: center;
+    font-size: 0.8em;
+    word-break: keep-all;
   }
 `;
 

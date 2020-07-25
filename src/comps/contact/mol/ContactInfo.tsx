@@ -8,7 +8,7 @@ const Root = styled.div`
   display: inline-block;
 
   @media screen and (max-width: 50em) {
-    margin: 0px 10.5m;
+    margin: 0px;
   }
 `;
 

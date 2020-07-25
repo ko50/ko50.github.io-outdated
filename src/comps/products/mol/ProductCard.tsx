@@ -26,6 +26,11 @@ const Root = styled.div`
     width: 16em;
     margin-right: auto;
     margin-left: auto;
+
+    :hover {
+      background-color: white;
+      color: ${BaseColors.purpleblack};
+    }
   }
 `;
 

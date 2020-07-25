@@ -1,13 +1,15 @@
 import React from 'react';
-import { Cotton } from './atom/Cotton';
-import { Background } from './atom/Background';
-import { HelloWorld } from './atom/HelloWorld';
+import { Cotton } from './mol/Cotton';
+import { Background } from './mol/Background';
+import { Welcome } from './mol/WelcomeText';
+import { NotWelcome } from './mol/NotWelcomeText';
 
 export function Cover() {
   return (
-    <Background>
+    <Background >
       <Cotton />
-      <HelloWorld />
+      <Welcome />
+      <NotWelcome />
     </Background>
   );
 }
