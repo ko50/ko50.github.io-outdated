@@ -2,6 +2,9 @@
 
 This is [ko50](https://github.com/ko50)'s portfolio site that written with React(TypeScript).
 
+↓My portfolio site hosted by `GitHub Pages`
+[ko's portfolio](https://ko50.github.io)
+
 <br />
 
 ## Branches
@@ -66,11 +69,3 @@ So, this branch seems the same as the `master` branch.
 
 This portfolio made by ***acquiring*** knowledge from seeing a nice great amazing loxygen's portfolio! <br />
 Much thanks and respect for loxygen! Thank you!
-
-<br />
-
----
-**Oh, please wait!!** <br />
-**Before go back, why don't you see this picture??**
-
-![](https://cdn.discordapp.com/attachments/700920014475362346/734486798927134870/life.png)
