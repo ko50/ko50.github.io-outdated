@@ -2,9 +2,7 @@
 
 This is [ko50](https://github.com/ko50)'s portfolio site that written with React(TypeScript).
 
-↓My portfolio site hosted by `GitHub Pages`
-[ko's portfolio](https://ko50.github.io)
-
+The portfolio site hosted by `GitHub Pages`: [ko50.github.io](https://ko50.github.io)
 <br />
 
 ## Branches
