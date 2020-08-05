@@ -38,7 +38,7 @@ export function AboutMe(): JSX.Element {
         )}
       </InfoList>
       <Introduce>
-        何もかも出遅れた系高専生です。一日に一回は頭を抱えて過去を呪っています。 <br />
+        出遅れた系高専生です。未だなにもできず燻っています。 <br />
       </Introduce>
     </Root>
   );

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { TopicTitle, StrongText } from '../common/Formatter';
-import { BaseColors } from 'data/Color';
 import { ContactValues } from 'data/value/ContactValues';
 import { ContactInfo } from './mol/ContactInfo';
 
