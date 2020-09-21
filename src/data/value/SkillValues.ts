@@ -4,31 +4,31 @@ export const SkillValues: SkillData[] = [
   {
     name: "Python",
     mastery: masteryLevelMap[3],
-    description: "最初に学んだプログラミング言語です。競プロでよく使います。",
+    description: "最初に学んだプログラミング言語です。競プロとかで使います。",
     frameworks: ["DiscordBot"],
   },
   {
     name: "Dart",
-    mastery: masteryLevelMap[4],
-    description: "主にFlutterと一緒に使用します。最近は反抗期みたいです。",
+    mastery: masteryLevelMap[3],
+    description: "主にFlutterと一緒に使用します。Flutter楽しいのでみんなやりましょう。",
     frameworks: ["Flutter", "DiscordBot"],
   },
   {
     name: "Kotlin",
     mastery: masteryLevelMap[2],
-    description: "自由度が高いのに綺麗に書けるので、書いていて楽しくてとても好きです。",
+    description: "堅実な記法が好きで書いていて楽しいので、学習してちゃんと書けるようになりたいです。",
     frameworks: ["Android-Native"],
   },
   {
     name: "TypeScript",
     mastery: masteryLevelMap[2],
-    description: "このポートフォリオを書くのに合わせ、Reactと一緒に勉強しています。",
+    description: "このポートフォリオはTS(React)で書かれてます。",
     frameworks: ["React"],
   },
   {
     name: "CSS",
-    mastery: masteryLevelMap[3],
-    description: "つい強引な記法をしてしまうので、早く完全理解したいです。",
+    mastery: masteryLevelMap[2],
+    description: "デバイスやブラウザに依存しない、安全なデザインを記述できるようになりたい。",
     frameworks: ["styled-components"],
   },
   {

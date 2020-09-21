@@ -17,7 +17,7 @@ export function Skills() {
   return (
     <Root>
       <TopicTitle>Language Skills</TopicTitle>
-      <StrongText>触った/扱える言語</StrongText>
+      <StrongText>ちょっとだけ書ける言語</StrongText>
       <SkillsList>
         {SkillValues.map((skill: SkillData) => (
           <SkillInfo

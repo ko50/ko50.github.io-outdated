@@ -11,7 +11,7 @@ export const AboutMeValues: AboutMeData[] = [
     },
     {
         title: "名前",
-        content: "koといいます。とても呼びにくいので呼称としてふさわしくない。由来は本名です。",
+        content: "\"ko\" とても呼びにくい…、考えた人の顔が見てみたいですね。一応本名から来てます。",
     },
     {
         title: "出生",
