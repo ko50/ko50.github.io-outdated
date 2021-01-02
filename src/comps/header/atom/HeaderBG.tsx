@@ -3,6 +3,8 @@ import { BaseColors } from 'data/Color';
 
 export const HeaderBG = styled.header`
   position: sticky;
+  top: 0;
+  left: 0;
   background-color: ${BaseColors.darkpurple};
   height: 4em;
   width: 100%;

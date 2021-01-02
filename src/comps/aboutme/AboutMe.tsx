@@ -12,6 +12,7 @@ const Root = styled.div`
   color: ${BaseColors.purpleblack};
 `;
 
+/*
 const Introduce = styled(StrongText)`
   display: inline-block;
   text-align: start;
@@ -24,6 +25,7 @@ const Introduce = styled(StrongText)`
     word-break: keep-all;
   }
 `;
+*/
 
 export function AboutMe(): JSX.Element {
   return (
@@ -37,9 +39,6 @@ export function AboutMe(): JSX.Element {
             content={info.content} />
         )}
       </InfoList>
-      <Introduce>
-        出遅れた系高専生です。弱いのでなにもできません。 <br />
-      </Introduce>
     </Root>
   );
 }

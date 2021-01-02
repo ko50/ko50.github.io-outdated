@@ -17,7 +17,7 @@ export function Contact(): JSX.Element {
   return (
     <Root>
       <TopicTitle>Contact</TopicTitle>
-      <StrongText>ご連絡などがあればこちらへ</StrongText>
+      <StrongText>連絡先</StrongText>
       <ContactInfoList>
         {ContactValues.map((contactInfo) =>
           <ContactInfo

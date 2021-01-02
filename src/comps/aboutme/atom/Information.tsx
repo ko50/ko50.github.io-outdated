@@ -34,6 +34,7 @@ const Content = styled.p`
   @media screen and (max-width: 50em) {
     text-align: center;
     font-size: 0.8em;
+    word-break: keep-all;
   }
 `;
 

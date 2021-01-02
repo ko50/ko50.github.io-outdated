@@ -18,7 +18,7 @@ export function Products(): JSX.Element {
   return (
     <Root>
       <TopicTitle>Products</TopicTitle>
-      <StrongText>作成物…そこになければないですね</StrongText>
+      <StrongText>製作物・実績</StrongText>
       <ProductsList>
         {ProductValues.map((product) =>
           <ProductCard
