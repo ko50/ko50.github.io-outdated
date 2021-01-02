@@ -31,10 +31,10 @@ export const SkillValues: SkillData[] = [
     description: "デバイスやブラウザに依存しない、安全なデザインを書けません。",
     frameworks: ["styled-components"],
   },
-  {
+/*  {
     name: "Go",
     mastery: masteryLevelMap[2],
     description: "少し勉強したものの放置中なので、時間ができ次第また触ろうと思っています。",
     frameworks: ["DiscordBot"],
-  },
+  }, */
 ];

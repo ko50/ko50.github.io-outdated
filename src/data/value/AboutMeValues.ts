@@ -11,10 +11,10 @@ export const AboutMeValues: AboutMeData[] = [
     },
     {
         title: "名前",
-        content: "呼びにくすぎる、考えた人の顔が見てみたいですね",
+        content: "koという名前でやっています。ネーミングセンスがありません",
     },
     {
         title: "出生",
-        content: "西暦2004生まれ、16歳 男性",
+        content: "西暦2004生まれ/16歳 男性",
     },
 ];
