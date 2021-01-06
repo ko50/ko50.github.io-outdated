@@ -20,10 +20,11 @@ const Background = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   float: right;
   display: flex;
+  flex-direction: left;
   vertical-align: middle;
 `;
 
@@ -32,25 +33,23 @@ const TitleText = styled.div`
   flex: 1;
   min-width: 0;
   text-align: left;
-  font-size: 1.7em;
+  font-size: 1.8em;
+  height: 1em;
   font-weight: 900;
 `;
 
 const ButtonsWrapper = styled.div`
-  font-size: 1.2em;
-  margin-right: 1.2em;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 1.3em;
+  margin-right: 2.6em;
   display: flex;
-  height: 100%;
+  height: 1em;
 `;
 
 const TransButton = styled.div`
   color: white; // TODO provide color
   font-weight: 700;
-  height: 1.4em;
-  margin-right: 10px;
-  margin-left: 10px;
+  height: 1.2em;
+  margin-left: 15px;
   border-bottom: 1px solid ${BaseColors.purplePink};
 `;
 
