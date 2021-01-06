@@ -1,11 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Header } from './comps/header/Header';
-import { Cover } from './comps/cover/Cover';
-import { AboutMe } from './comps/aboutme/AboutMe';
-import { Skills } from './comps/skills/Skills';
-import { Products } from './comps/products/Products';
-import { Contact } from './comps/contact/Contact';
 
 const Root = styled.div`
   text-align: center;
@@ -16,16 +10,10 @@ const Root = styled.div`
   justify-content: center;
 `;
 
-
 function App() {
   return (
     <Root>
-      <Header />
-      <Cover />
-      <AboutMe />
-      <Skills />
-      <Products />
-      <Contact />
+      何もありません
     </Root>
   );
 }
