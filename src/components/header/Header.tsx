@@ -7,29 +7,48 @@ type Props = {
 };
 
 const Background = styled.div`
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
   background-color: ${BaseColors.darkPurple};
-  padding-left: 30px;
-  padding-right: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: white;
   border-bottom: 4px solid ${BaseColors.purplePink};
-  float: left;
-  vertical-align: center;
+  box-shadow: 0px 0px 5px 0px ${BaseColors.shadow};
 `;
 
-const TitleText = styled.p`
+const Container = styled.div`
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+  display: flex;
+  vertical-align: middle;
+`;
+
+const TitleText = styled.div`
+  padding-left: 30px;
   flex: 1;
-  font-size: 1.5em;
+  min-width: 0;
+  text-align: left;
+  font-size: 1.7em;
   font-weight: 900;
 `;
 
-const TransButton = styled.p`
-  width: auto;
-  height: auto;
+const ButtonsWrapper = styled.div`
   font-size: 1.2em;
+  margin-right: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  height: 100%;
+`;
+
+const TransButton = styled.div`
   color: white; // TODO provide color
+  font-weight: 700;
+  height: 1.4em;
   margin-right: 10px;
   margin-left: 10px;
   border-bottom: 1px solid ${BaseColors.purplePink};
@@ -45,13 +64,17 @@ export default function Header(props: Props) {
 
   return (
     <Background>
-      <TitleText>ko's Portfolio</TitleText>
+      <Container>
+        <TitleText>ko's Portfolio</TitleText>
 
-      { subViews.map((value: string) => (
-        <TransButton>
-          {value}
-        </TransButton>
-      ))}
+        <ButtonsWrapper>
+          {subViews.map((value: string) => (
+            <TransButton>
+              {value}
+            </TransButton>
+          ))}
+        </ButtonsWrapper>
+      </Container>
     </Background>
   );
 }
