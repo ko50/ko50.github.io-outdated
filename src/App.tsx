@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import TransitionStatus from 'types/TransitionStatus'
 
 const Root = styled.div`
   text-align: center;
@@ -9,6 +10,10 @@ const Root = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+// const transitionStatus: TransitionStatus = TransitionStatus();
+
+const ViewChangeContext: React.Context<number> = React.createContext(-1);
 
 function App() {
   return (
