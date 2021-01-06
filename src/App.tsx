@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Header from 'components/header/Header'
 import TransitionStatus from 'types/TransitionStatus'
 
 const Root = styled.div`
@@ -11,6 +13,10 @@ const Root = styled.div`
   justify-content: center;
 `;
 
+const Hoge = styled.div`
+  flex: 1;
+`;
+
 // const transitionStatus: TransitionStatus = TransitionStatus();
 
 const ViewChangeContext: React.Context<number> = React.createContext(-1);
@@ -18,8 +24,9 @@ const ViewChangeContext: React.Context<number> = React.createContext(-1);
 function App() {
   return (
     <Root>
-      何もありません
-    </Root>
+      <Header currentIndex={0} />
+      <Hoge>何もありません</Hoge>
+    </Root >
   );
 }
 
