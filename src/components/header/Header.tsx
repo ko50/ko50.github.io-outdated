@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { BaseColors } from 'values/BaseColors'
+import TransitionButton from 'components/header/TransisionButton'
 
 type Props = {
   currentIndex: number
@@ -46,14 +47,6 @@ const ButtonsWrapper = styled.div`
   height: 1em;
 `;
 
-const TransButton = styled.div`
-  color: white; // TODO provide color
-  font-weight: 700;
-  height: 1.2em;
-  margin-left: 15px;
-  border-bottom: 1px solid ${BaseColors.purplePink};
-`;
-
 export default function Header(props: Props) {
   const subViews: string[] = [
     "About Me",
@@ -68,13 +61,11 @@ export default function Header(props: Props) {
         <TitleText>ko's Portfolio</TitleText>
 
         <ButtonsWrapper>
-          {subViews.map((value: string) => (
-            <TransButton>
-              {value}
-            </TransButton>
-          ))}
+          {subViews.map((value: string, index) =>
+            <TransitionButton text={value} index={index} />
+          )}
         </ButtonsWrapper>
       </Container>
     </Background>
   );
-}
+};
