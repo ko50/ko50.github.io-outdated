@@ -1,0 +1,56 @@
+import React from 'react'
+import styled from 'styled-components'
+
+import { BaseColors } from 'values/BaseColors'
+
+const Background = styled.div`
+  background: linear-gradient(white, ${BaseColors.pink});
+  width: 100%;
+  flex: 1;
+`;
+
+const Container = styled.div`
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const IconBackground = styled.div`
+  background: linear-gradient(-45deg, ${BaseColors.darkPurple}, #BD3A9A);
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0 ${BaseColors.shadow};
+`;
+
+const Icon = styled.img`
+  border: 0.5em solid white;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+`;
+
+const Text = styled.div`
+  font-size: 2.3em;
+  margin-top: 1em;
+  font-weight: 700;
+  color: ${BaseColors.darkPurple};
+`;
+
+export default function Hello() {
+  return (
+    <Background>
+      <Container>
+        <IconBackground>
+          <Icon src="cotton_circle.png" />
+        </IconBackground>
+        <Text>Hello World, My name is ko!</Text>
+      </Container>
+    </Background>
+  )
+}
