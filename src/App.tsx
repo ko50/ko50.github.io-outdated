@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Header from 'components/header/Header'
 import Hello from 'components/hello/Hello'
+import Footer from 'components/common/Footer'
 import TransitionStatus from 'types/TransitionStatus'
 
 const Root = styled.div`
@@ -23,6 +24,7 @@ function App() {
     <Root>
       <Header currentIndex={0} />
       <Hello />
+      <Footer />
     </Root >
   );
 }
