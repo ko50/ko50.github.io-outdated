@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from 'components/header/Header'
+import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
 import Footer from 'components/common/Footer'
-import TransitionStatus from 'types/TransitionStatus'
 
 const Root = styled.div`
   text-align: center;
@@ -15,15 +14,18 @@ const Root = styled.div`
   justify-content: center;
 `;
 
-// const transitionStatus: TransitionStatus = TransitionStatus();
+export const TransitionContext: React.Context<number> = React.createContext(-1);
 
-// const ViewChangeContext: React.Context<number> = React.createContext(-1);
+const App = () => {
+  const [currentViewIndex, updateView] = React.useState(-1);
 
-function App() {
   return (
     <Root>
-      <Header currentIndex={0} />
-      <Hello />
+      <TransitionContext.Provider value={currentViewIndex}>
+        <Header updateView={(index: number) => updateView(index)} />
+        <Hello />
+        <div>{`${currentViewIndex}`}</div>
+      </TransitionContext.Provider>
       <Footer />
     </Root >
   );

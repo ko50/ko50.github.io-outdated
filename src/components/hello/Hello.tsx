@@ -2,11 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { BaseColors } from 'values/BaseColors'
+import { TransitionContext } from 'App'
 
-const Background = styled.div`
+const Background = styled.div<{ visible: Boolean }>`
   background: linear-gradient(white, ${BaseColors.pink});
   width: 100%;
   flex: 1;
+  transition: 300ms;
+  opacity: ${(props) => props.visible ? "1" : "0"};
 `;
 
 const Container = styled.div`
@@ -44,13 +47,17 @@ const Text = styled.div`
 
 export default function Hello() {
   return (
-    <Background>
-      <Container>
-        <IconBackground>
-          <Icon src="cotton_circle.png" />
-        </IconBackground>
-        <Text>Hello World, My name is ko!</Text>
-      </Container>
-    </Background>
+    <TransitionContext.Consumer>
+      {currentViewIndex => (
+        <Background visible={currentViewIndex === -1}>
+          <Container>
+            <IconBackground>
+              <Icon src="cotton_circle.png" />
+            </IconBackground>
+            <Text>Hello World, My name is ko!</Text>
+          </Container>
+        </Background>
+      )}
+    </TransitionContext.Consumer>
   )
 }
