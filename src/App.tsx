@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from 'components/header/Header'
+import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
-import TransitionStatus from 'types/TransitionStatus'
+import { TransitionStatus, TransitionContext } from 'types/TransitionStatus'
 
 const Root = styled.div`
   text-align: center;
@@ -14,14 +14,10 @@ const Root = styled.div`
   justify-content: center;
 `;
 
-// const transitionStatus: TransitionStatus = TransitionStatus();
-
-// const ViewChangeContext: React.Context<number> = React.createContext(-1);
-
 function App() {
   return (
     <Root>
-      <Header currentIndex={0} />
+      <Header displayedIndex={0} />
       <Hello />
     </Root >
   );

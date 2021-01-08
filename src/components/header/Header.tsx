@@ -4,10 +4,6 @@ import styled from 'styled-components'
 import { BaseColors } from 'values/BaseColors'
 import TransitionButton from 'components/header/TransisionButton'
 
-type Props = {
-  currentIndex: number
-};
-
 const Background = styled.div`
   position: sticky;
   top: 0;
@@ -47,7 +43,13 @@ const ButtonsWrapper = styled.div`
   height: 1em;
 `;
 
-export default function Header(props: Props) {
+type Props = {
+  displayedIndex: number
+};
+
+export const HoverContext = React.createContext(0);
+
+export const Header = (props: Props) => {
   const subViews: string[] = [
     "About Me",
     "Skills",
@@ -55,16 +57,25 @@ export default function Header(props: Props) {
     "Contacts",
   ];
 
+  const [hoveredIndex, onHover] = React.useState(0);
+
   return (
     <Background>
       <Container>
         <TitleText>ko's Portfolio</TitleText>
 
-        <ButtonsWrapper>
-          {subViews.map((value: string, index) =>
-            <TransitionButton text={value} index={index} />
-          )}
-        </ButtonsWrapper>
+        <HoverContext.Provider value={hoveredIndex}>
+          <ButtonsWrapper>
+            {subViews.map((value: string, index) =>
+              <TransitionButton
+                text={value}
+                index={index}
+                onHover={(index: number) => onHover(index)}
+                onDisHover={() => onHover(-1)}
+              />
+            )}
+          </ButtonsWrapper>
+        </HoverContext.Provider>
       </Container>
     </Background>
   );
