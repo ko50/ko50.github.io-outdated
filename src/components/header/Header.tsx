@@ -2,10 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { BaseColors } from 'values/BaseColors'
-
-type Props = {
-  currentIndex: number
-};
+import TransitionButton from 'components/header/TransisionButton'
+import PageTopButton from 'components/header/PageTopButton'
 
 const Background = styled.div`
   position: sticky;
@@ -29,16 +27,6 @@ const Container = styled.div`
   vertical-align: middle;
 `;
 
-const TitleText = styled.div`
-  padding-left: 30px;
-  flex: 1;
-  min-width: 0;
-  text-align: left;
-  font-size: 1.8em;
-  height: 1em;
-  font-weight: 900;
-`;
-
 const ButtonsWrapper = styled.div`
   font-size: 1.3em;
   margin-right: 2.6em;
@@ -46,15 +34,13 @@ const ButtonsWrapper = styled.div`
   height: 1em;
 `;
 
-const TransButton = styled.div`
-  color: white; // TODO provide color
-  font-weight: 700;
-  height: 1.2em;
-  margin-left: 15px;
-  border-bottom: 1px solid ${BaseColors.purplePink};
-`;
+type Props = {
+  updateView: (index: number) => void,
+};
 
-export default function Header(props: Props) {
+export const HoverContext = React.createContext(0);
+
+export const Header = (props: Props) => {
   const subViews: string[] = [
     "About Me",
     "Skills",
@@ -62,19 +48,26 @@ export default function Header(props: Props) {
     "Contacts",
   ];
 
+  const [hoveredIndex, onHover] = React.useState(-1);
+
   return (
     <Background>
       <Container>
-        <TitleText>ko's Portfolio</TitleText>
-
-        <ButtonsWrapper>
-          {subViews.map((value: string) => (
-            <TransButton>
-              {value}
-            </TransButton>
-          ))}
-        </ButtonsWrapper>
+        <PageTopButton onClick={(index) => props.updateView(index)} />
+        <HoverContext.Provider value={hoveredIndex}>
+          <ButtonsWrapper>
+            {subViews.map((value: string, index) =>
+              <TransitionButton
+                text={value}
+                index={index}
+                onHover={(index: number) => onHover(index)}
+                onDisHover={() => onHover(-1)}
+                onClick={(index: number) => props.updateView(index)}
+              />
+            )}
+          </ButtonsWrapper>
+        </HoverContext.Provider>
       </Container>
     </Background>
   );
-}
+};
