@@ -14,8 +14,8 @@ const Background = styled.div`
 `;
 
 const Container = styled.div`
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   padding-right: 2em;
   padding-left: 2em;
 `;
@@ -30,8 +30,18 @@ const RightsNotation = styled.div`
 `;
 */
 
+const Divider = styled.div` 
+  width: 1.5em;
+  height: 1px;
+  margin-top: 2.5px;
+  padding-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid ${BaseColors.grey};
+`;
+
 const Copyright = styled.div`
-  font-size: 0.5em;
+  font-size: 0.4em;
   color: ${BaseColors.grey};
 `;
 
