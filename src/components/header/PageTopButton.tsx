@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { BaseColors } from 'values/BaseColors'
-
-
 const TitleText = styled.div`
   padding-left: 30px;
   flex: 1;
