@@ -44,7 +44,7 @@ const ButtonsWrapper = styled.div`
 `;
 
 type Props = {
-  displayedIndex: number
+  updateView: (index: number) => void,
 };
 
 export const HoverContext = React.createContext(0);
@@ -57,7 +57,7 @@ export const Header = (props: Props) => {
     "Contacts",
   ];
 
-  const [hoveredIndex, onHover] = React.useState(0);
+  const [hoveredIndex, onHover] = React.useState(-1);
 
   return (
     <Background>
@@ -72,6 +72,7 @@ export const Header = (props: Props) => {
                 index={index}
                 onHover={(index: number) => onHover(index)}
                 onDisHover={() => onHover(-1)}
+                onClick={(index: number) => props.updateView(index)}
               />
             )}
           </ButtonsWrapper>
