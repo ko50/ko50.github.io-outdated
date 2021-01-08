@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
+import Footer from 'components/common/Footer'
 
 const Root = styled.div`
   text-align: center;
@@ -25,6 +26,7 @@ const App = () => {
         <Hello />
         <div>{`${currentViewIndex}`}</div>
       </TransitionContext.Provider>
+      <Footer />
     </Root >
   );
 }
