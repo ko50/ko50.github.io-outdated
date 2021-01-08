@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'values/BaseColors'
 import TransitionButton from 'components/header/TransisionButton'
+import PageTopButton from 'components/header/PageTopButton'
 
 const Background = styled.div`
   position: sticky;
@@ -24,16 +25,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: left;
   vertical-align: middle;
-`;
-
-const TitleText = styled.div`
-  padding-left: 30px;
-  flex: 1;
-  min-width: 0;
-  text-align: left;
-  font-size: 1.8em;
-  height: 1em;
-  font-weight: 900;
 `;
 
 const ButtonsWrapper = styled.div`
@@ -62,8 +53,7 @@ export const Header = (props: Props) => {
   return (
     <Background>
       <Container>
-        <TitleText>ko's Portfolio</TitleText>
-
+        <PageTopButton onClick={(index) => props.updateView(index)} />
         <HoverContext.Provider value={hoveredIndex}>
           <ButtonsWrapper>
             {subViews.map((value: string, index) =>
