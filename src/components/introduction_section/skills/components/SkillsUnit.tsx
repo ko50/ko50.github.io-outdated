@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { SkillData, SkillCategory } from 'data/type/SkillData'
+import { SkillCard } from 'components/introduction_section/skills/components/SkillCard'
 
 const Container = styled.div`
   height: fit-content;
@@ -26,6 +27,7 @@ export const SkillsUnit = (props: Props) => {
   return (
     <Container>
       <Title>{props.category}</Title>
+      {props.skills.map((skill) => <SkillCard data={skill} />)}
     </Container>
   );
 };
