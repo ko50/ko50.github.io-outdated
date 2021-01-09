@@ -1,18 +1,16 @@
-import { GrTwitter, GrGithub } from 'react-icons/all'
-
 import { ContactData } from 'data/type/ContactData'
 
 export const ContactValue: ContactData[] = [
   {
-    serviceName: "GitHub",
+    serviceName: "Twitter",
     caption: "@ko_CottonLove",
-    url: "https://github.com/ko50",
-    icon: GrGithub,
+    url: "https://twitter.com/ko_CottonLove",
+    iconSrc: "contact_icon/Twitter.png"
   },
   {
-    serviceName: "Twitter",
+    serviceName: "GitHub",
     caption: "@ko50",
-    url: "https://twitter.com/ko_CottonLove",
-    icon: GrTwitter,
+    url: "https://github.com/ko50",
+    iconSrc: "contact_icon/GitHub.svg",
   },
 ];

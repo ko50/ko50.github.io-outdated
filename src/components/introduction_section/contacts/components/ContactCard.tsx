@@ -6,31 +6,41 @@ import { ContactData } from 'data/type/ContactData'
 import { IntroductionSection } from 'components/introduction_section/IntroductionSection'
 
 const Background = styled.div`
-  width: 35%;
-  padding: 1em;
+  width: 40%;
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 5px 0 ${BaseColors.shadow};
   transition: 300ms;
+  margin: 1em;
 
   :hover {
-    transform: scale(2, 2) rotate(1);
+    transform: rotate(-1deg) scale(1.5);
   }
 `;
 
 const Link = styled.a`
-  opacity: 0;
+  padding: 1.5em;
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
+  display: block;
+  text-decoration: none;
 `;
 
-const Leading = styled.div`
-  height: 2em;
-  width: 2em;
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const Leading = styled.img`
+  height: 3em;
+  width: 3em;
 `;
 
 const CardName = styled.div`
-  font-size: 1.5em;
+  text-align: left;
+  font-size: 1.4em;
   margin-left: 1em;
   color: ${BaseColors.darkGrey};
 `;
@@ -41,8 +51,10 @@ export const ContactCard = (props: Props) => {
   return (
     <Background>
       <Link href={props.data.url} target="_blank" rel="noopener noreferrer">
-        <Leading>{props.data.icon}</Leading>
-        <CardName>{props.data.caption}</CardName>
+        <Container>
+          <Leading src={props.data.iconSrc} />
+          <CardName>{props.data.caption}</CardName>
+        </Container>
       </Link>
     </Background>
   );
