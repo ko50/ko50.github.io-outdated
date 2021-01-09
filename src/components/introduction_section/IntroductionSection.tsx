@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { BaseColors } from 'values/BaseColors'
 import { TransitionContext } from 'App'
 
 const Background = styled.div<{ visible: Boolean }>`
   width: 100%;
-  flex: 1;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
   transition: 300ms;
   opacity: ${(props) => props.visible ? "1" : "0"};
 `;

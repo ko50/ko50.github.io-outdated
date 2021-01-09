@@ -9,9 +9,9 @@ import { IntroductionSection } from 'components/introduction_section/Introductio
 export const Skills = () => {
   return (
     <IntroductionSection index={1} content={(
-      <>
-
-      </>
+      <div>
+        Skills
+      </div>
     )} />
   );
 };

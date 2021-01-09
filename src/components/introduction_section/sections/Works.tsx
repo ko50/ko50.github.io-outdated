@@ -8,10 +8,10 @@ import { IntroductionSection } from 'components/introduction_section/Introductio
 
 export const Works = () => {
   return (
-    <IntroductionSection index={1} content={(
-      <>
-
-      </>
+    <IntroductionSection index={2} content={(
+      <div>
+        Works
+      </div>
     )} />
   );
 };
