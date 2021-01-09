@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { ContactData } from 'data/type/ContactData'
-import { IntroductionSection } from 'components/introduction_section/IntroductionSection'
+import { IntroductionSection } from 'components/sections/IntroductionSection'
 
 const Background = styled.div`
   width: 40%;

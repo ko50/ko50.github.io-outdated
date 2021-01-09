@@ -5,10 +5,10 @@ import { BaseColors } from 'data/BaseColors'
 import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
 import Footer from 'components/common/Footer'
-import { AboutMe } from 'components/introduction_section/sections/AboutMe'
-import { Skills } from 'components/introduction_section/skills/Skills'
-import { Works } from 'components/introduction_section/sections/Works'
-import { Contacts } from 'components/introduction_section/contacts/Contacts'
+import { AboutMe } from 'components/sections/about_me/AboutMe'
+import { Skills } from 'components/sections/skills/Skills'
+import { Works } from 'components/sections/works/Works'
+import { Contacts } from 'components/sections/contacts/Contacts'
 
 const Root = styled.div`
   text-align: center;

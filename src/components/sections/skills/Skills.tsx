@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { TransitionContext } from 'App'
-import { IntroductionSection } from 'components/introduction_section/IntroductionSection'
-import { SkillsUnit } from 'components/introduction_section/skills/components/SkillsUnit'
+import { IntroductionSection } from 'components/sections/IntroductionSection'
+import { SkillsUnit } from 'components/sections/skills/components/SkillsUnit'
 import { SkillData, SkillCategory } from 'data/type/SkillData'
 import { SkillValue } from 'data/value/SkillValue'
 
