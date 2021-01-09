@@ -6,7 +6,7 @@ import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
 import Footer from 'components/common/Footer'
 import { AboutMe } from 'components/introduction_section/sections/AboutMe'
-import { Skills } from 'components/introduction_section/sections/Skills'
+import { Skills } from 'components/introduction_section/skills/Skills'
 import { Works } from 'components/introduction_section/sections/Works'
 import { Contacts } from 'components/introduction_section/sections/Contacts'
 
