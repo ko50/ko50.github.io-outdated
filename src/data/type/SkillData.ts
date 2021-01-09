@@ -1,14 +1,12 @@
-export const masteryLevelMap: { [key: number]: string } = {
-  1: '👀 興味はある',
-  2: '🔰 勉強中',
-  3: '🤔 少しだけできる',
-  4: '👍 すき',
-  5: '✨ 完全に理解した'
-}
+export enum SkillCategory {
+  language = 'Languages',
+  framework = 'Frameworks',
+  tool = 'Tools',
+};
 
 export type SkillData = {
+  skillType: SkillCategory,
+  iconSrc: string,
   name: string,
-  mastery: string,
   description: string,
-  frameworks: string[],
-}
+};
