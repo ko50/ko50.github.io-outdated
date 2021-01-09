@@ -7,13 +7,18 @@ import { SkillCard } from 'components/introduction_section/skills/components/Ski
 
 const Container = styled.div`
   height: fit-content;
-  width: 30%;
+  width: 28%;
+  align-items: center;
 `;
 
 const Title = styled.div`
   height: fit-content;
-  padding: 0 8px;
-  margin: 1em 0;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 1em;
+  margin: 1em auto;
+  font-weight: 700;
   border-right: 2px solid ${BaseColors.darkPurple};
   border-left: 2px solid ${BaseColors.darkPurple};
 `;
