@@ -1,7 +1,7 @@
 export enum SkillCategory {
-  language,
-  framework,
-  tool,
+  language = 'Languages',
+  framework = 'Frameworks',
+  tool = 'Tools',
 };
 
 export type SkillData = {
