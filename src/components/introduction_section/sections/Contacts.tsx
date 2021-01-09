@@ -8,7 +8,7 @@ import { IntroductionSection } from 'components/introduction_section/Introductio
 
 export const Contacts = () => {
   return (
-    <IntroductionSection index={3} content={(
+    <IntroductionSection index={3} title="Contacts" subTitle="連絡先" content={(
       <div>
         Contacts
       </div>

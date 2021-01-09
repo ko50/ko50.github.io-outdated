@@ -9,9 +9,9 @@ const Background = styled.div<{ visible: Boolean }>`
   position: absolute;
   flex: 1;
   transition: 300ms;
+  transition-delay: ${(props) => props.visible ? "400" : "0"}ms;
   opacity: ${(props) => props.visible ? "1" : "0"};
-
-  ${(props) => props.visible ? "" : "transform: translateY(3);"}
+  transform: translateY(${(props) => props.visible ? "3" : "0"}px);
 `;
 
 const Container = styled.div`
