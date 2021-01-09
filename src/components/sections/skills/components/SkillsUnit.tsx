@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { SkillData, SkillCategory } from 'data/type/SkillData'
-import { SkillCard } from 'components/introduction_section/skills/components/SkillCard'
+import { SkillCard } from 'components/sections/skills/components/SkillCard'
 
 const Container = styled.div`
   height: fit-content;
