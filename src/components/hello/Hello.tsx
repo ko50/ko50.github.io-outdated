@@ -5,11 +5,13 @@ import { BaseColors } from 'values/BaseColors'
 import { TransitionContext } from 'App'
 
 const Background = styled.div<{ visible: Boolean }>`
-  background: linear-gradient(white, ${BaseColors.pink});
   width: 100%;
+  position: absolute;
   flex: 1;
   transition: 300ms;
   opacity: ${(props) => props.visible ? "1" : "0"};
+
+  ${(props) => props.visible ? "" : "transform: translateY(3);"}
 `;
 
 const Container = styled.div`
