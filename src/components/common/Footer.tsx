@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { BaseColors } from 'values/BaseColors'
+import { BaseColors } from 'data/BaseColors'
 
 const Background = styled.div`
   position: sticky;

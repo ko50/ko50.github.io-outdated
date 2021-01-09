@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BaseColors } from 'values/BaseColors'
+import { BaseColors } from 'data/BaseColors'
 import { Header } from 'components/header/Header'
 import Hello from 'components/hello/Hello'
 import Footer from 'components/common/Footer'
