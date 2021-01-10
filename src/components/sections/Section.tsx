@@ -16,6 +16,7 @@ const Background = styled.div<{ visible: Boolean }>`
   transition-delay: ${(props) => props.visible ? "400" : "0"}ms;
   opacity: ${(props) => props.visible ? "1" : "0"};
   transform: translateY(${(props) => props.visible ? "0" : "3px"});
+  z-index: ${(props) => props.visible ? "1" : "0"};
 
   animation: ${(props) => (
     props.visible
