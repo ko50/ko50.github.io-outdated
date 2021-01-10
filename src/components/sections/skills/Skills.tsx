@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { TransitionContext } from 'App'
-import { IntroductionSection } from 'components/sections/IntroductionSection'
+import { Section } from 'components/sections/Section'
 import { SkillsUnit } from 'components/sections/skills/components/SkillsUnit'
 import { SkillData, SkillCategory } from 'data/type/SkillData'
 import { SkillValue } from 'data/value/SkillValue'
@@ -34,7 +34,7 @@ export const Skills = () => {
   return (
     <TransitionContext.Consumer>
       {currentViewIndex => (
-        <IntroductionSection index={1} title="Skills" subTitle="できること" content={(
+        <Section index={1} title="Skills" subTitle="できること" content={(
           <Container visible={currentViewIndex === 1}>
             <SkillsUnit category={SkillCategory.language} skills={languagesSkills} />
             <SkillsUnit category={SkillCategory.framework} skills={frameworksSkills} />

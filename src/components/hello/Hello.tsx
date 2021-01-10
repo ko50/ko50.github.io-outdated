@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
 import { TransitionContext } from 'App'
+import { FadeoutAnimation, FadeinAnimation } from 'helpers/FadeAnimation'
 
 const Background = styled.div<{ visible: Boolean }>`
   width: 100%;
@@ -10,8 +11,16 @@ const Background = styled.div<{ visible: Boolean }>`
   flex: 1;
   transition: 300ms;
   transition-delay: ${(props) => props.visible ? "400" : "0"}ms;
-  opacity: ${(props) => props.visible ? "1" : "0"};
   transform: translateY(${(props) => props.visible ? "3" : "0"}px);
+  opacity: ${(props) => props.visible ? "1" : "0"};
+
+  animation: ${(props) => (
+    props.visible
+      ? FadeinAnimation
+      : FadeoutAnimation
+  )};
+  animation-delay: ${(props) => props.visible ? "200" : "0"}ms;
+  animation-duration: 300ms;
 `;
 
 const Container = styled.div`
