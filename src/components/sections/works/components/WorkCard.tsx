@@ -2,15 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { BaseColors } from 'data/BaseColors'
+import { TransitionContext } from 'App'
 import { WorkData } from 'data/type/WorkData'
 
-const Background = styled.a`
+const Background = styled.a<{ visible: Boolean }>`
   box-shadow: 0 1px 3px 0 ${BaseColors.shadow};
   width: 40%;
   display: block;
   text-decoration: none;
   border: 1px solid ${BaseColors.darkPurple};
   border-radius: 2px;
+  color: ${BaseColors.darkPurple};
+
+  transition: 300ms;
+  visibility: ${(props) => props.visible ? "visible" : "hidden"};
+
+  :hover {
+    background-color: ${BaseColors.darkPurple};
+    color: white;
+  }
 `;
 
 const Snapshot = styled.img`
@@ -27,7 +37,6 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 1.2em;
-  color: ${BaseColors.darkPurple};
   font-weight: 700;
   text-align: left;
 `;
@@ -36,7 +45,6 @@ const Tags = styled.div`
   margin: 0.5em 0;
   font-size: 0.6em;
   text-align: left;
-  color: black;
   font-weight: 300;
 `;
 
@@ -44,12 +52,19 @@ type Props = { data: WorkData };
 
 export const WorkCard = (props: Props) => {
   return (
-    <Background href={props.data.url}>
-      <Snapshot src={props.data.snapshotSrc} />
-      <Container>
-        <Title>{props.data.name}</Title>
-        <Tags>Tag: {props.data.tag.join(" ")}</Tags>
-      </Container>
-    </Background>
+    <TransitionContext.Consumer>
+      {currentViewIndex => (
+        <Background
+          href={props.data.url}
+          visible={currentViewIndex === 2}
+        >
+          <Snapshot src={props.data.snapshotSrc} />
+          <Container>
+            <Title>{props.data.name}</Title>
+            <Tags>Tag: {props.data.tag.join(" ")}</Tags>
+          </Container>
+        </Background>
+      )}
+    </TransitionContext.Consumer>
   );
 };

@@ -11,7 +11,8 @@ import { SkillValue } from 'data/value/SkillValue'
 const Container = styled.div<{ visible: Boolean }>`
   display: flex;
   flex-direction: row;
-  padding: 40px;
+  padding: 2em;
+  padding-top: 0;
   justify-content: space-around;
 
   transition: 400ms ease-in;
