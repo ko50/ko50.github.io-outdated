@@ -11,6 +11,7 @@ const Button = styled.div<{ hovered: Boolean }>`
   height: 1.2em;
   margin-left: 15px;
   border-bottom: 1px solid ${BaseColors.purplePink};
+  cursor: pointer;
   transition: 300ms;
   ${(props) => (props.hovered ? "color: white;" : "")}
 `;
