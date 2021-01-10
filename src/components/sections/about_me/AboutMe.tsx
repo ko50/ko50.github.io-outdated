@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { TransitionContext } from 'App'
 import { BaseColors } from 'data/BaseColors'
 import { AboutMeValue } from 'data/value/AboutMeValue'
-import { IntroductionSection } from 'components/sections/IntroductionSection'
+import { Section } from 'components/sections/Section'
 
 const Container = styled.div`
   display: flex;
@@ -21,8 +21,8 @@ const Introduce = styled.div<{ index: number, visible: Boolean }>`
   padding: 0px 10px;
   border-left: 4px solid ${BaseColors.darkPurple};
   transition: 300ms;
-  transition-delay: ${(props) => (props.index * 100) + 400}ms;
-  transform: translateX(${(props) => props.visible ? "4px" : "0px"});
+  transition-delay: ${(props) => (props.index * 100) + 800}ms;
+  transform: translateX(${(props) => props.visible ? "10px" : "0px"});
   opacity: ${(props) => props.visible ? "1" : "0"};
 `;
 
@@ -43,7 +43,7 @@ export const AboutMe = () => {
   return (
     <TransitionContext.Consumer>
       {currentViewIndex => {
-        return <IntroductionSection index={0} title="About Me" subTitle="自己紹介" content={(
+        return <Section index={0} title="About Me" subTitle="自己紹介" content={(
           <Container>
             {AboutMeValue.map((value, index) => {
               return <Introduce index={index} visible={currentViewIndex === 0}>
