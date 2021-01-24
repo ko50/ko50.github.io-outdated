@@ -15,6 +15,7 @@ const Background = styled.div`
   color: white;
   border-bottom: 4px solid ${BaseColors.purplePink};
   box-shadow: 0px 0px 5px 0px ${BaseColors.shadow};
+  z-index: 500000000000;
 `;
 
 const Container = styled.div`
