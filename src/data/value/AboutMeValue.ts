@@ -1,7 +1,7 @@
 import { AboutMeData } from 'data/type/AboutMeData'
 import { CalcAge } from 'helpers/CalcAge'
 
-const myBirthDay: Date = new Date(2004, 2, 24);
+const myBirthDay: Date = new Date(2004, 1, 24);
 
 export const AboutMeValue: AboutMeData[] = [
   {
