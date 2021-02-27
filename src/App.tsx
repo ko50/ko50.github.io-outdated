@@ -12,7 +12,7 @@ import { Contacts } from 'components/sections/contacts/Contacts'
 
 const Root = styled.div`
   text-align: center;
-  min-height: 120vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ const Root = styled.div`
 
 const ContentWrapper = styled.div<{ visible: Boolean }>`
   width: 100%;
-  min-height: 120vh;
+  min-height: 150vh;
   background: linear-gradient(white, ${BaseColors.pink});
   transition: 300ms;
   flex: 1;
