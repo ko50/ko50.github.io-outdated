@@ -6,11 +6,13 @@ import { BaseColors } from 'data/BaseColors'
 const Background = styled.div`
   position: sticky;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: auto;
   background-color: ${BaseColors.darkPurple};
   border-top: 4px solid ${BaseColors.purplePink};
   box-shadow: 0px 0px 5px 0px ${BaseColors.shadow};
+  z-index: 500000000000;
 `;
 
 const Container = styled.div`
