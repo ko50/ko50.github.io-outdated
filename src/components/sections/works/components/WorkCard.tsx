@@ -5,7 +5,7 @@ import { BaseColors } from 'data/BaseColors'
 import { TransitionContext } from 'App'
 import { WorkData } from 'data/type/WorkData'
 
-const Background = styled.a<{ visible: Boolean }>`
+const BackgroundLink = styled.a<{ visible: Boolean }>`
   box-shadow: 0 1px 3px 0 ${BaseColors.shadow};
   width: 40%;
   display: block;
@@ -13,6 +13,7 @@ const Background = styled.a<{ visible: Boolean }>`
   border: 1px solid ${BaseColors.darkPurple};
   border-radius: 2px;
   color: ${BaseColors.darkPurple};
+  margin: 2rem;
 
   transition: 300ms;
   visibility: ${(props) => props.visible ? "visible" : "hidden"};
@@ -54,8 +55,10 @@ export const WorkCard = (props: Props) => {
   return (
     <TransitionContext.Consumer>
       {currentViewIndex => (
-        <Background
+        <BackgroundLink
           href={props.data.url}
+          target="_blank"
+          rel="noopener noreferrer"
           visible={currentViewIndex === 2}
         >
           <Snapshot src={props.data.snapshotSrc} />
@@ -63,7 +66,7 @@ export const WorkCard = (props: Props) => {
             <Title>{props.data.name}</Title>
             <Tags>Tag: {props.data.tag.join(" ")}</Tags>
           </Container>
-        </Background>
+        </BackgroundLink>
       )}
     </TransitionContext.Consumer>
   );
